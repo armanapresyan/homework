@@ -95,10 +95,9 @@ for (let i = 1; i <= a; i++) {
 let pos;
 for (let i = a; i >= 1; i--) {
   pos = row.lastIndexOf(i);
-  if (pos !== -1) {
-    row = row.slice(0, pos);
-    result += row + "\n";
-  }
+  row = row.slice(0, pos);
+  result += row + "\n";
+  
 }
 
 console.log(result);
